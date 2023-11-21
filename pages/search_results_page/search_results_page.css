@@ -199,15 +199,21 @@ main .content {
   color: white;
 }
 
+.main__content__result {
+  min-height: 50rem;
+}
+
 /* ===== post section ======== */
 
 #post_list {
-  visibility: hidden;
+  display: none;
   opacity: 0;
+  visibility: hidden;
   transition: visibility 0s, opacity 0.2s ease-in;
 }
 
 #post_list.loaded {
+  display: flex;
   visibility: visible;
   opacity: 1;
 }
@@ -311,12 +317,15 @@ main .content {
 
 /* ====== product section ======= */
 #products {
+  display: none;
   visibility: hidden;
   opacity: 0;
+  transition-delay: 0.3s;
   transition: visibility 0s, opacity 0.2s ease-in;
 }
 
 #products.loaded {
+  display: grid;
   visibility: visible;
   opacity: 1;
 }
@@ -397,6 +406,17 @@ main .content {
 }
 
 /* ==== users section ==== */
+#users {
+  display: none;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s ease-in;
+}
+
+#users.loaded {
+  display: flex;
+  opacity: 1;
+}
+
 .users {
   display: flex;
   width: 100%;
