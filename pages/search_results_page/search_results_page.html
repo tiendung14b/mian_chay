@@ -21,37 +21,121 @@
   <link rel="stylesheet" href="../../assets/base.css">
   <!-- css -->
   <link rel="stylesheet" href="./search_results_page.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
   <!-- nav -->
-  <div class="content">
-    <header>
-      <div class="header__intro">
-        <img src="../../assets/logo.png" alt="Logo" class="header__logo">
-        <strong class="header__title">MIAN CHAY</strong>
-      </div>
-      <ul class="header__nav">
-        <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Trang chủ</a></li>
-        <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Diễn đàn</a></li>
-        <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Mianchay's Shop</a></li>
-        <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Nhà hàng</a></li>
-      </ul>
-      <div class="header__tools">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-cart-arrow-down"></i>
-        <i class="fa-regular fa-bell"></i>
-        <img src="../../assets/user_avatar.png" alt="" class="header__user_avt">
-      </div>
-    </header>
-  </div>
+  <header>
+    <div class="header__intro">
+      <img src="../../assets/logo.png" alt="Logo" class="header__logo">
+      <strong class="header__title">MIAN CHAY</strong>
+    </div>
+    <ul class="header__nav">
+      <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Trang chủ</a></li>
+      <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Diễn đàn</a></li>
+      <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Mianchay's Shop</a></li>
+      <li class="header__nav-item"><a href="#!" class="header__nav-link critz_text">Nhà hàng</a></li>
+    </ul>
+    <div class="header__tools">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-cart-arrow-down"></i>
+      <i class="fa-regular fa-bell"></i>
+      <img src="../../assets/user_avatar.png" alt="" class="header__user_avt">
+    </div>
+  </header>
   <!-- main content -->
   <main>
-
+    <div class="content">
+      <p class="main__search__result">Kết quả tìm kiếm: <strong>"Dinh dưỡng"</strong></p>
+      <div class="main__body">
+        <div class="vertical__filter">
+          <p class="filter__title">Bộ lọc</p>
+          <ul class="filter__list">
+            <li id="filter_all">Tất cả</li>
+            <li id="filter_post" class="clicked">Bài đăng</li>
+            <li id="filter_user">Người dùng</li>
+            <li id="filter_product">Sản phẩm</li>
+          </ul>
+        </div>
+        <div class="main__content">
+          <div class="horizontal_filter">
+            <span>Lọc theo:</span>
+            <ul class="content__filter">
+              <li class="content__filter-item">Mới nhất</li>
+              <li class="content__filter-item clicked">Phổ biến nhất</li>
+              <li class="content__filter-item">Chủ đề liên quan</li>
+            </ul>
+          </div>
+          <div class="main__content__result" id="main__content__result" w3-include-html="./posts.html">
+          </div>
+          <div class="page-num">
+            <ul class="page-num__list">
+              <li class="page-num__item clicked">1</li>
+              <li class="page-num__item">2</li>
+              <li class="page-num__item">3</li>
+              <li class="page-num__item">4</li>
+              <li class="page-num__item">5</li>
+              <li class="page-num__item">Tiếp ></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <!-- footer -->
-  <footer>
+  <footer class="mianchay">
+    <div class="mianchay__intro">
+      <div class="mianchay__logo">
+        <img src="../../assets/logo.png" alt="Logo" class="header__logo">
+        <strong class="mianchay__title">MIAN CHAY</strong>
+      </div>
+      <p class="mianchay__desc">Chúng tôi hi vọng tất cả người tiêu dùng Việt nam sẽ được sử dụng những sản phẩm chay
+        chất lượng, an toàn nhất tại cửa
+        hàng mian chay.</p>
+      <div class="mianchay__email_input">
+        <input type="email" placeholder="Email">
+        <button class="mianchay__email_subimt_button">Đăng ký</button>
+      </div>
+    </div>
+    <div class="mianchay__about">
+      <p class="about__first_row critz_text">Về chúng tôi</p>
+      <div class="about__second_row">
+        <ul class="about__col">
+          <li>Trang chủ</li>
+          <li>Diễn đàn</li>
+          <li>Cửa hàng</li>
+        </ul>
+        <ul class="about__col">
+          <li>Trang chủ</li>
+          <li>Diễn đàn</li>
+          <li>Cửa hàng</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mianchay__contact">
+      <p class="contact__first_row critz_text">Liên hệ</p>
+      <div class="contact__row">
+        <img src="../../assets/phone.svg" alt="">
+        <p>033 569 9699</p>
+      </div>
+      <div class="contact__row">
+        <img src="../../assets/fb.svg" alt="">
+        <p>Mian Chay</p>
+      </div>
+      <div class="contact__row">
+        <img src="../../assets/location.svg" alt="">
+        <p>Trần Phú, Hà Nội</p>
+      </div>
+    </div>
   </footer>
+  <div class="copy-right">
+    <p class="copy-right-text">All rights reserved by © <em>Mianchay creative</em> 2023</p>
+  </div>
+  <script>
+    w3.includeHTML();
+  </script>
+  <script src="./search_results_page.js"></script>
 </body>
 
 </html>
