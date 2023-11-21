@@ -8,7 +8,7 @@ setTimeout(function () {
 
 document.getElementById('filter_post').classList.add('clicked');
 
-$.get('./posts.html', function (data) {
+$.get('../../assets/posts.html', function (data) {
   $('#main__content__result').html($(data));
 });
 
@@ -18,7 +18,7 @@ document.getElementById('filter_post').addEventListener('click', function () {
   document.getElementById(verticalFilterCurrent).classList.remove('clicked');
   document.getElementById('filter_post').classList.add('clicked');
   verticalFilterCurrent = 'filter_post';
-  $.get('./posts.html', function (data) {
+  $.get('../../assets/posts.html', function (data) {
     $('#main__content__result').html($(data));
   });
   setTimeout(function () {
@@ -32,7 +32,7 @@ document.getElementById('filter_product').addEventListener('click', function () 
   document.getElementById(verticalFilterCurrent).classList.remove('clicked');
   verticalFilterCurrent = 'filter_product';
   document.getElementById(verticalFilterCurrent).classList.add('clicked');
-  $.get('./products.html', function (data) {
+  $.get('../../assets/products.html', function (data) {
     $('#main__content__result').html($(data));
   });
   setTimeout(function () {
@@ -46,7 +46,7 @@ document.getElementById('filter_user').addEventListener('click', function () {
   document.getElementById(verticalFilterCurrent).classList.remove('clicked');
   verticalFilterCurrent = 'filter_user';
   document.getElementById(verticalFilterCurrent).classList.add('clicked');
-  $.get('./users.html', function (data) {
+  $.get('../../assets/users.html', function (data) {
     $('#main__content__result').html($(data));
   });
 });
