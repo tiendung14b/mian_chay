@@ -385,6 +385,7 @@ main .content {
 .price__row i {
   font-size: 2rem;
   margin-left: auto;
+  color: #279600;
 }
 
 /* ==== users section ==== */
