@@ -23,7 +23,7 @@ document.getElementById('filter_post').addEventListener('click', function () {
   });
   setTimeout(function () {
     document.getElementById('post_list').classList.add('loaded');
-  }, 300);
+  }, 100);
 });
 
 document.getElementById('filter_product').addEventListener('click', function () {
@@ -37,7 +37,7 @@ document.getElementById('filter_product').addEventListener('click', function () 
   });
   setTimeout(function () {
     document.getElementById('products').classList.add('loaded');
-  }, 300);
+  }, 100);
 });
 
 document.getElementById('filter_user').addEventListener('click', function () {

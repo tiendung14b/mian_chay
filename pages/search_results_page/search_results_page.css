@@ -23,6 +23,7 @@ header {
 
 .header__nav-item {
   padding: 0rem 2rem;
+  transition: ease-in-out 0.15s;
 }
 
 .header__nav-item:hover {
@@ -125,6 +126,12 @@ main .content {
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  transition: ease-in-out 0.15s;
+}
+
+.filter__list li:not(.clicked):hover {
+  background-color: #27960011;
+  color: #279600;
 }
 
 .filter__list li.clicked {
@@ -179,6 +186,7 @@ main .content {
   border-radius: 5px;
   padding: 1.2rem 2.4rem;
   cursor: pointer;
+  transition: ease-in-out 0.15s;
 }
 
 .content__filter-item:not(.clicked):hover {
