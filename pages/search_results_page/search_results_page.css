@@ -140,7 +140,8 @@ main .content {
   border-radius: 5px;
   background-color: #27960011;
 }
-
+a {
+}
 .filter__list li.clicked::before {
   content: "";
   position: absolute;
