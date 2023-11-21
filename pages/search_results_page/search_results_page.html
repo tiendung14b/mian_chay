@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="../../assets/base.css">
   <!-- css -->
   <link rel="stylesheet" href="./search_results_page.css">
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -53,7 +55,7 @@
           <p class="filter__title">Bộ lọc</p>
           <ul class="filter__list">
             <li id="filter_all">Tất cả</li>
-            <li id="filter_post" class="clicked">Bài đăng</li>
+            <li id="filter_post">Bài đăng</li>
             <li id="filter_user">Người dùng</li>
             <li id="filter_product">Sản phẩm</li>
           </ul>
@@ -67,9 +69,9 @@
               <li class="content__filter-item">Chủ đề liên quan</li>
             </ul>
           </div>
-          <div class="main__content__result" id="main__content__result" w3-include-html="./posts.html">
+          <div class="main__content__result" id="main__content__result">
           </div>
-          <div class="page-num">
+          <div class="page-num" id="page-num">
             <ul class="page-num__list">
               <li class="page-num__item clicked">1</li>
               <li class="page-num__item">2</li>
@@ -132,9 +134,6 @@
   <div class="copy-right">
     <p class="copy-right-text">All rights reserved by © <em>Mianchay creative</em> 2023</p>
   </div>
-  <script>
-    w3.includeHTML();
-  </script>
   <script src="./search_results_page.js"></script>
 </body>
 
