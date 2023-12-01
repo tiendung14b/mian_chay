@@ -1,3 +1,18 @@
+:root {
+  --color-primary: #279600;
+  --nav-bar-text-size: 2rem;
+  --result-search-text-size: 2rem;
+  --title-item-text-size: 1.8rem;
+  --product-title-text-size: 2rem;
+  --product-price-text-size: 2rem;
+  --primary-text-size: 1.6rem;
+  --secondary-text-size: 1.8rem;
+  --footer-text-size: 1.8rem;
+  --footer-item-text-size: 2rem;
+  --content-filter-item-text-size: 1.8rem;
+  --item-img-size: 20rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,5 +39,11 @@ body {
 }
 
 .content {
-  padding: 0 11.6rem;
+  width: 83%;
+  margin: 0 auto;
+}
+
+hr {
+  margin-bottom: 2.4rem;
+  margin-top: 2.4rem;
 }

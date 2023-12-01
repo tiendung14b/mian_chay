@@ -1,0 +1,145 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #e8f3e5;
+  padding: 5.8rem 11.6rem 5rem 11.6rem;
+  margin-top: 10rem;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.mianchay__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.mianchay__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mianchay__logo img {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+
+.mianchay__title {
+  color: #279600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mianchay__desc {
+  width: 44.5rem;
+  font-size: var(--footer-text-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mianchay__email_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mianchay__email_input input {
+  border-radius: 32px 0px 0px 0px;
+  background: #fff;
+  padding: 1.4rem 1.4rem 1.5rem 2.4rem;
+  border: 0px;
+  color: #9c9c9c;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mianchay__email_subimt_button {
+  border-radius: 0px 0px 3.2rem 0px;
+  background: #279600;
+  padding: 1.4rem 2.4rem 1.5rem 2.4rem;
+  border: 0px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.mianchay__email_input input:focus {
+  outline: none;
+}
+
+.about__first_row {
+  font-size: var(--footer-item-text-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about__second_row {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+
+.about__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__col li {
+  font-size: var(--footer-item-text-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.mianchay__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contact__first_row {
+  font-size: var(--footer-item-text-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contact__row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.copy-right {
+  margin-top: 2rem;
+  margin-left: 11.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.copy-right-text {
+  color: #1a2c56;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.copy-right-text em {
+  color: #279600;
+}
