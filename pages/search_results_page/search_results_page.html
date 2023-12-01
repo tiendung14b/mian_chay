@@ -16,17 +16,21 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
+  <!-- Boostrap 5 CDN link embed -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <!-- Boostrap 5 CSS CDN embed link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- reset css -->
-  <link rel="stylesheet" href="../../assets/reset.css">
+  <link rel="stylesheet" href="../../assets/reset.css" !important>
   <!-- base css -->
-  <link rel="stylesheet" href="../../assets/base.css">
+  <link rel="stylesheet" href="../../assets/base.css" !important>
   <!-- css -->
-  <link rel="stylesheet" href="./search_results_page.css">
-  <link rel="stylesheet" href="../../assets/header.css">
-  <link rel="stylesheet" href="../../assets/footer.css">
+  <link rel="stylesheet" href="./search_results_page.css" !important>
+  <link rel="stylesheet" href="../../assets/header.css" !important>
+  <link rel="stylesheet" href="../../assets/footer.css" !important>
 </head>
 
 <body>
@@ -42,14 +46,13 @@
       <ul class="header__nav">
         <li class="header__nav-item"><a href="#!" class="header__nav-link">Trang chủ</a></li>
         <li class="header__nav-item">
-          <a href="#!" class="header__nav-link">Diễn đàn</a>
+          <a href="#!" class="header__nav-link">Sản phẩm</a>
           <img src="../../assets/dropdown.svg" alt="">
         </li>
         <li class="header__nav-item">
-          <a href="#!" class="header__nav-link">Mianchay's Shop</a>
+          <a href="#!" class="header__nav-link">Diễn đàn</a>
           <img src="../../assets/dropdown.svg" alt="">
         </li>
-        <li class="header__nav-item"><a href="#!" class="header__nav-link">Nhà hàng</a></li>
       </ul>
       <div class="header__tools">
         <div class="header__tools__item header_search_input">
@@ -98,7 +101,7 @@
               <button id="product-tab" data-bs-toggle="pill" data-bs-target="#products" type="button" role="tab"
                 aria-controls="product-tab" aria-selected="false">
                 <img src="../../assets/producticon.svg" alt="">
-                Sảnphẩm
+                Sản phẩm
               </button>
             </li>
           </ul>
@@ -328,11 +331,30 @@
             <div class="post_list tab-pane fade" id="post_list" role="tabpanel" aria-labelledby="post-tab">
               <div class="horizontal_filter">
                 <span>Lọc theo:</span>
-                <ul class="content__filter">
-                  <li class="content__filter-item">Mới nhất</li>
-                  <li class="content__filter-item clicked">Phổ biến nhất</li>
-                  <li class="content__filter-item">Chủ đề liên quan</li>
-                </ul>
+                <div class="content__filter">
+                  <div class="dropdown content__filter-item">
+                    <button type="button" id="post_newest" data-bs-toggle="dropdown" aria-expanded="false">
+                      Mới nhất
+                    </button>
+                  </div>
+                  <div class="dropdown content__filter-item">
+                    <button type="button" id="post_popular" data-bs-toggle="dropdown" aria-expanded="false">
+                      Phổ biến
+                    </button>
+                  </div>
+                  <div class="btn-secondary dropdown content__filter-item">
+                    <button type="button" id="post_relative" data-bs-toggle="dropdown" aria-expanded="false">
+                      Chủ đề liên quan
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="post_relative">
+                      <li !important><a class="dropdown-item" href="#" onclick="showText(this)">Dinh dưỡng</a></li>
+                      <li !important><a class="dropdown-item" href="#" onclick="showText(this)">Nhà hàng</a></li>
+                      <li !important><a class="dropdown-item" href="#" onclick="showText(this)">Sức khỏe</a></li>
+                      <li !important><a class="dropdown-item" href="#" onclick="showText(this)">Ăn chay linh hoạt</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="post-container">
                 <div class="post">
@@ -480,6 +502,16 @@
                     </div>
                   </div>
                 </div>
+                <div class="page-num" id="page-num">
+                  <ul class="page-num__list">
+                    <li class="page-num__item clicked">1</li>
+                    <li class="page-num__item">2</li>
+                    <li class="page-num__item">3</li>
+                    <li class="page-num__item">4</li>
+                    <li class="page-num__item">5</li>
+                    <li class="page-num__item">Tiếp ></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <!-- grid box with 3 div in each row -->
@@ -593,6 +625,16 @@
                   </div>
                 </div>
               </div>
+              <div class="page-num" id="page-num">
+                <ul class="page-num__list">
+                  <li class="page-num__item clicked">1</li>
+                  <li class="page-num__item">2</li>
+                  <li class="page-num__item">3</li>
+                  <li class="page-num__item">4</li>
+                  <li class="page-num__item">5</li>
+                  <li class="page-num__item">Tiếp ></li>
+                </ul>
+              </div>
             </div>
             <!-- user -->
             <div class="user-list tab-pane fade" id="user-list" role="tabpanel" aria-labelledby="user-tab">
@@ -692,17 +734,17 @@
                   Đang theo dõi
                 </button>
               </div>
+              <div class="page-num" id="page-num">
+                <ul class="page-num__list">
+                  <li class="page-num__item clicked">1</li>
+                  <li class="page-num__item">2</li>
+                  <li class="page-num__item">3</li>
+                  <li class="page-num__item">4</li>
+                  <li class="page-num__item">5</li>
+                  <li class="page-num__item">Tiếp ></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="page-num" id="page-num">
-            <ul class="page-num__list">
-              <li class="page-num__item clicked">1</li>
-              <li class="page-num__item">2</li>
-              <li class="page-num__item">3</li>
-              <li class="page-num__item">4</li>
-              <li class="page-num__item">5</li>
-              <li class="page-num__item">Tiếp ></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -757,10 +799,6 @@
   <div class="copy-right">
     <p class="copy-right-text">All rights reserved by © <em>Mianchay creative</em> 2023</p>
   </div>
-  <!-- Boostrap 5 CDN link embed -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
   <script src="./search_results_page.js"></script>
 </body>
 
