@@ -69,16 +69,15 @@ main .content {
   text-align: left;
 } /* ===== filter section ======== */
 
-.filter__list li:not(.clicked):hover {
-  background-color: #27960011;
-  color: #279600;
-}
-
 .filter__list li button[aria-selected="true"] {
   position: relative;
   color: #279600;
   border-radius: 5px;
   background-color: #27960011;
+}
+
+.filter__list li button[aria-selected="true"] path {
+  fill: #279600;
 }
 
 .filter__list li.clicked::before {
@@ -154,6 +153,11 @@ main .content {
   font-weight: 400;
   padding: 1rem 2.4rem;
   line-height: normal;
+}
+
+.content__filter-item ul li a:hover {
+  background-color: transparent;
+  color: #279600;
 }
 
 .content__filter-price {
