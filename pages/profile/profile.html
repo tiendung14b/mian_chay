@@ -117,93 +117,185 @@
     <div class="content">
       <div class="main__content">
         <div class="main__profile-card">
-          <div class="card__info">
+          <div class="profile-card__info">
             <img src="../../assets/user_avatar.png" alt="">
-            <div class="card__name">
+            <div class="profile-card__name">
               <p>Đoàn Văn An</p>
               <p>@dva123</p>
             </div>
           </div>
-          <p class="card__desc">
+          <p class="profile-card__desc">
             Ăn chay sống khoẻ<br>
             Sức khoẻ trên hết
           </p>
-          <div class="card__stat">
-            <div class="card__stat--row">
-              <div class="card__stat__info">
-                <strong class="stat__number">295</strong>
-                <span class="stat__title">Bài đăng</span>
-              </div>
-              <div class="card__stat__info">
-                <strong class="stat__number">295</strong>
-                <span class="stat__title">Bài đăng</span>
-              </div>
-            </div>
-          </div>
           <div class="card__stat--row">
             <div class="card__stat__info">
               <strong class="stat__number">295</strong>
               <span class="stat__title">Bài đăng</span>
             </div>
+            <div class="vertical-line"></div>
             <div class="card__stat__info">
-              <strong class="stat__number">295</strong>
-              <span class="stat__title">Bài đăng</span>
+              <strong class="stat__number">3012</strong>
+              <span class="stat__title">Lượt thích</span>
             </div>
           </div>
-          <button class="card__btn">
+          <div class="card__stat--row">
+            <div class="card__stat__info">
+              <strong class="stat__number">30</strong>
+              <span class="stat__title">Đang theo dõi</span>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="card__stat__info">
+              <strong class="stat__number">9503</strong>
+              <span class="stat__title">Lượt theo dõi</span>
+            </div>
+          </div>
+          <button class="profile-card__btn">
             Chỉnh sửa thông tin cá nhân
           </button>
         </div>
-      </div>
-      <div class="main__post-section">
-        <div class="post__upload">
-          <div class="post__upload_avt">
-            <img src="../../assets/user_avatar.png" alt="">
+        <div class="main__post-section">
+          <div class="post__upload">
+            <img class="post__upload_avt" src="../../assets/user_avatar.png" alt="">
+            <div class="post__upload_input">
+              <img src="../../assets/upload_img.svg" alt="">
+              <input type="text" placeholder="Chia sẻ quan điểm của bạn">
+            </div>
           </div>
-          <div class="post__upload_input">
-            <img src="../../assets/upload_img.svg" alt="">
-            <input type="text" placeholder="Chia sẻ quan điểm của bạn">
-          </div>
-        </div>
-        <ul class="post__tab nav nav-pills mb-3" id="myTab" role="tablist">
-          <li role="presentation">
-            <button id="post__news-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
-              aria-controls="post__new-tab" aria-selected="true">
-              Bài viết
-            </button>
-          </li>
-          <li role="presentation">
-            <button id="post__saved-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
-              aria-controls="post__saved-tab" aria-selected="false">
-              Bài đã lưu
-            </button>
-          </li>
-          <li role="presentation">
-            <button id="post__draft-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
-              aria-controls="post__draft-tab" aria-selected="false">
-              Bài nháp
-            </button>
-          </li>
-        </ul>
-        <div class="post__container">
-          <div class="post__card">
-            <div class="post__first_row">
-              <div class="post__owner">
-                <img src="../../assets/user_avatar.png" alt="">
-                <div class="post__owner_info">
-                  <p class="post__owner_name">Đoàn Văn An</p>
-                  <p class="post__time">29 Thg 9, 2023</p>
+          <hr>
+          <ul class="post__tab nav nav-pills mb-3" id="post__tab" role="tablist">
+            <li role="presentation">
+              <button id="post__news-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+                aria-controls="post__new-tab" aria-selected="true">
+                Bài viết
+              </button>
+            </li>
+            <li role="presentation">
+              <button id="post__saved-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+                aria-controls="post__saved-tab" aria-selected="false">
+                Bài đã lưu
+              </button>
+            </li>
+            <li role="presentation">
+              <button id="post__draft-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+                aria-controls="post__draft-tab" aria-selected="false">
+                Bài nháp
+              </button>
+            </li>
+          </ul>
+          <div class="post__container tab-content">
+            <div class="post__news tab-pane fade show active" id="post__news" role="tabpanel"
+              aria-labelledby="post__news-btn">
+              <div class="post__card">
+                <div class="post__first_row">
+                  <div class="post__owner">
+                    <img src="../../assets/user_avatar.png" alt="">
+                    <div class="post__owner_info">
+                      <p class="post__owner_name">Đoàn Văn An</p>
+                      <p class="post__time">29 Thg 9, 2023</p>
+                    </div>
+                  </div>
+                  <p class="post__topic_name">Dinh dưỡng</p>
+                  <img class="post__card__view_more" src="../../assets/threedot.svg" alt="">
+                </div>
+                <div class="post__content">
+                  <p class="post__content_title">
+                    Lorem ipsum dolor sit a...
+                  </p>
+                  <img class="post__content_img" src="../../assets/post_img.png" alt="">
+                  <p class="post__content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugit enim in rem quis ad amet sunt
+                    consequatur numquam et... <b>Xem thêm</b>
+                  </p>
                 </div>
               </div>
-              <div class="post__topic">
-                <p class="post__topic_name">Sức khỏe</p>
+              <hr>
+              <div class="post__card">
+                <div class="post__first_row">
+                  <div class="post__owner">
+                    <img src="../../assets/user_avatar.png" alt="">
+                    <div class="post__owner_info">
+                      <p class="post__owner_name">Đoàn Văn An</p>
+                      <p class="post__time">29 Thg 9, 2023</p>
+                    </div>
+                  </div>
+                  <p class="post__topic_name">Dinh dưỡng</p>
+                  <img class="post__card__view_more" src="../../assets/threedot.svg" alt="">
+                </div>
+                <div class="post__content">
+                  <p class="post__content_title">
+                    Lorem ipsum dolor sit a...
+                  </p>
+                  <img class="post__content_img" src="../../assets/post_img.png" alt="">
+                  <p class="post__content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugit enim in rem quis ad amet sunt
+                    consequatur numquam et... <b>Xem thêm</b>
+                  </p>
+                </div>
               </div>
-              <img class="post__card__view_more" src="../../assets/threedot.svg" alt="">
+              <hr>
+              <div class="post__card">
+                <div class="post__first_row">
+                  <div class="post__owner">
+                    <img src="../../assets/user_avatar.png" alt="">
+                    <div class="post__owner_info">
+                      <p class="post__owner_name">Đoàn Văn An</p>
+                      <p class="post__time">29 Thg 9, 2023</p>
+                    </div>
+                  </div>
+                  <p class="post__topic_name">Dinh dưỡng</p>
+                  <img class="post__card__view_more" src="../../assets/threedot.svg" alt="">
+                </div>
+                <div class="post__content">
+                  <p class="post__content_title">
+                    Lorem ipsum dolor sit a...
+                  </p>
+                  <img class="post__content_img" src="../../assets/post_img.png" alt="">
+                  <p class="post__content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugit enim in rem quis ad amet sunt
+                    consequatur numquam et... <b>Xem thêm</b>
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="post__card">
+                <div class="post__first_row">
+                  <div class="post__owner">
+                    <img src="../../assets/user_avatar.png" alt="">
+                    <div class="post__owner_info">
+                      <p class="post__owner_name">Đoàn Văn An</p>
+                      <p class="post__time">29 Thg 9, 2023</p>
+                    </div>
+                  </div>
+                  <p class="post__topic_name">Dinh dưỡng</p>
+                  <img class="post__card__view_more" src="../../assets/threedot.svg" alt="">
+                </div>
+                <div class="post__content">
+                  <p class="post__content_title">
+                    Lorem ipsum dolor sit a...
+                  </p>
+                  <img class="post__content_img" src="../../assets/post_img.png" alt="">
+                  <p class="post__content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugit enim in rem quis ad amet sunt
+                    consequatur numquam et... <b>Xem thêm</b>
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="page-num" id="page-num">
+                <ul class="page-num__list">
+                  <li class="page-num__item clicked">1</li>
+                  <li class="page-num__item">2</li>
+                  <li class="page-num__item">3</li>
+                  <li class="page-num__item">4</li>
+                  <li class="page-num__item">5</li>
+                  <li class="page-num__item">Tiếp ></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </main>
 
