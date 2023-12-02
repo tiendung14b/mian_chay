@@ -30,8 +30,30 @@ body {
   font-size: 1.6rem;
 }
 
+.blur_screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000099;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+main {
+  position: relative;
+}
+
+main .content {
+  padding-top: 7.2rem;
+}
+
+main.blur .blur_screen {
+  display: block;
+}
+
 .critz_text {
-  font-family: "Sarabun";
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;

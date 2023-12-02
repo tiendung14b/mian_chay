@@ -57,7 +57,7 @@
       <div class="header__tools">
         <div class="header_search_input btn-secondary dropdown">
           <div data-bs-toggle="dropdown" aria-expanded="false" id="header__search" aria-selected="false">
-            <input id="header__input" type="text" placeholder="Tìm kiếm" onfocus="on_blur()" onblur="on_out()" />
+            <input id="header__input" type="text" placeholder="Tìm kiếm" onfocus="on_focus()" onblur="on_blur()" />
             <img src="../../assets/search.svg" alt="" class="">
           </div>
           <ul id="header__dropdown-menu" class="dropdown-menu" aria-labelledby="header__search">
@@ -892,6 +892,7 @@
   </div>
   <script src="./search_results_page.js"></script>
   <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+  <script src="../../assets/base.js"></script>
 </body>
 
 </html>
