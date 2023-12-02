@@ -114,7 +114,97 @@
   </header>
   <main id="main">
     <div class="blur_screen"></div>
-    <div class="content"></div>
+    <div class="content">
+      <div class="main__content">
+        <div class="main__profile-card">
+          <div class="card__info">
+            <img src="../../assets/user_avatar.png" alt="">
+            <div class="card__name">
+              <p>Đoàn Văn An</p>
+              <p>@dva123</p>
+            </div>
+          </div>
+          <p class="card__desc">
+            Ăn chay sống khoẻ<br>
+            Sức khoẻ trên hết
+          </p>
+          <div class="card__stat">
+            <div class="card__stat--row">
+              <div class="card__stat__info">
+                <strong class="stat__number">295</strong>
+                <span class="stat__title">Bài đăng</span>
+              </div>
+              <div class="card__stat__info">
+                <strong class="stat__number">295</strong>
+                <span class="stat__title">Bài đăng</span>
+              </div>
+            </div>
+          </div>
+          <div class="card__stat--row">
+            <div class="card__stat__info">
+              <strong class="stat__number">295</strong>
+              <span class="stat__title">Bài đăng</span>
+            </div>
+            <div class="card__stat__info">
+              <strong class="stat__number">295</strong>
+              <span class="stat__title">Bài đăng</span>
+            </div>
+          </div>
+          <button class="card__btn">
+            Chỉnh sửa thông tin cá nhân
+          </button>
+        </div>
+      </div>
+      <div class="main__post-section">
+        <div class="post__upload">
+          <div class="post__upload_avt">
+            <img src="../../assets/user_avatar.png" alt="">
+          </div>
+          <div class="post__upload_input">
+            <img src="../../assets/upload_img.svg" alt="">
+            <input type="text" placeholder="Chia sẻ quan điểm của bạn">
+          </div>
+        </div>
+        <ul class="post__tab nav nav-pills mb-3" id="myTab" role="tablist">
+          <li role="presentation">
+            <button id="post__news-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+              aria-controls="post__new-tab" aria-selected="true">
+              Bài viết
+            </button>
+          </li>
+          <li role="presentation">
+            <button id="post__saved-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+              aria-controls="post__saved-tab" aria-selected="false">
+              Bài đã lưu
+            </button>
+          </li>
+          <li role="presentation">
+            <button id="post__draft-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+              aria-controls="post__draft-tab" aria-selected="false">
+              Bài nháp
+            </button>
+          </li>
+        </ul>
+        <div class="post__container">
+          <div class="post__card">
+            <div class="post__first_row">
+              <div class="post__owner">
+                <img src="../../assets/user_avatar.png" alt="">
+                <div class="post__owner_info">
+                  <p class="post__owner_name">Đoàn Văn An</p>
+                  <p class="post__time">29 Thg 9, 2023</p>
+                </div>
+              </div>
+              <div class="post__topic">
+                <p class="post__topic_name">Sức khỏe</p>
+              </div>
+              <img class="post__card__view_more" src="../../assets/threedot.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   </main>
 
   <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
