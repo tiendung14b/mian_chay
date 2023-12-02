@@ -56,8 +56,8 @@
       </ul>
       <div class="header__tools">
         <div class="header_search_input btn-secondary dropdown">
-          <div data-bs-toggle="dropdown" aria-expanded="false" id="header__search" aria-selected="true">
-            <input id="header__input" type="text" placeholder="Tìm kiếm" onfocus="on_blur()" />
+          <div data-bs-toggle="dropdown" aria-expanded="false" id="header__search" aria-selected="false">
+            <input id="header__input" type="text" placeholder="Tìm kiếm" onfocus="on_blur()" onblur="on_out()" />
             <img src="../../assets/search.svg" alt="" class="">
           </div>
           <ul id="header__dropdown-menu" class="dropdown-menu" aria-labelledby="header__search">
