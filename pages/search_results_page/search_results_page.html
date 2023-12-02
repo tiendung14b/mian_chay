@@ -57,7 +57,7 @@
       <div class="header__tools">
         <div class="header_search_input btn-secondary dropdown">
           <div data-bs-toggle="dropdown" aria-expanded="false" id="header__search" aria-selected="true">
-            <input placeholder="hi" />
+            <input id="header__input" type="text" placeholder="Tìm kiếm" onfocus="on_blur()" />
             <img src="../../assets/search.svg" alt="" class="">
           </div>
           <ul id="header__dropdown-menu" class="dropdown-menu" aria-labelledby="header__search">
@@ -115,6 +115,7 @@
   </header>
   <!-- main content -->
   <main id="main">
+    <div class="blur_screen"></div>
     <div class="content">
       <p class="main__search__result">Kết quả tìm kiếm: <strong style="margin: 4rem">"Dinh dưỡng"</strong></p>
       <div class="main__body">

@@ -8,6 +8,7 @@ function showText2(item) {
   document.getElementById("product_price").classList.add("clicked");
 }
 
-document.getElementById("header__dropdown-menu").onfocus = function () {
+function on_blur() {
+  console.log("clicked");
   document.getElementById("main").classList.add("blur");
 }
