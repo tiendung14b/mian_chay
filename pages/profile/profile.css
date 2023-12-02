@@ -205,6 +205,10 @@
   border: 1px solid #eaeaea;
 }
 
+.post {
+  width: 640px;
+}
+
 .post__card {
   display: flex;
   flex-direction: column;
