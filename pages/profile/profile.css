@@ -179,7 +179,7 @@
 }
 
 .post__tab li button {
-  padding: 0rem 10rem 2.4rem 10rem;
+  padding: 0rem 5rem 2.4rem 5rem;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -205,9 +205,9 @@
   border: 1px solid #eaeaea;
 }
 
-.post {
+/* .post {
   width: 640px;
-}
+} */
 
 .post__card {
   display: flex;
@@ -290,7 +290,7 @@
 .post__content_img {
   object-fit: cover;
   border-radius: 24px;
-  width: 62.9rem;
+  width: 95%;
 }
 
 .post__content_desc {
