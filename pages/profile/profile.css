@@ -297,6 +297,36 @@
   line-height: normal;
 }
 
+.post__interact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1.6rem;
+  width: 627px;
+}
+
+.post__interact__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.post__interact__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.8rem;
+  margin-left: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+
 .page-num__list {
   align-self: center;
   display: flex;
@@ -304,7 +334,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 5.6rem;
+  margin-top: 2.6rem;
 }
 
 .page-num__item {
