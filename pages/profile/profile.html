@@ -165,19 +165,19 @@
           <hr>
           <ul class="post__tab nav nav-pills mb-3" id="post__tab" role="tablist">
             <li role="presentation">
-              <button id="post__news-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
-                aria-controls="post__new-tab" aria-selected="true">
+              <button id="post__news-btn" data-bs-toggle="pill" data-bs-target="#post__news" type="button" role="tab"
+                aria-controls="post__new-tab" aria-selected="false">
                 Bài viết
               </button>
             </li>
             <li role="presentation">
-              <button id="post__saved-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+              <button id="post__saved-btn" data-bs-toggle="pill" data-bs-target="#post__saved" type="button" role="tab"
                 aria-controls="post__saved-tab" aria-selected="false">
                 Bài đã lưu
               </button>
             </li>
             <li role="presentation">
-              <button id="post__draft-btn" data-bs-toggle="pill" data-bs-target="#all_filter" type="button" role="tab"
+              <button id="post__draft-btn" data-bs-toggle="pill" data-bs-target="#post__draft" type="button" role="tab"
                 aria-controls="post__draft-tab" aria-selected="false">
                 Bài nháp
               </button>
@@ -186,6 +186,31 @@
           <div class="post__container tab-content">
             <div class="post__news tab-pane fade show active" id="post__news" role="tabpanel"
               aria-labelledby="post__news-btn">
+              <div class="post__card">
+                <div class="post__first_row">
+                  <div class="post__owner">
+                    <img src="../../assets/user_avatar.png" alt="">
+                    <div class="post__owner_info">
+                      <p class="post__owner_name">Đoàn Văn An</p>
+                      <p class="post__time">29 Thg 9, 2023</p>
+                    </div>
+                  </div>
+                  <p class="post__topic_name">Dinh dưỡng</p>
+                  <img class="post__card__view_more" src="../../assets/threedot.svg" alt="">
+                </div>
+                <div class="post__content">
+                  <p class="post__content_title">
+                    Lorem ipsum dolor sit a...
+                  </p>
+                  <img class="post__content_img" src="../../assets/post_img.png" alt="">
+                  <p class="post__content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugit enim in rem quis ad amet sunt
+                    consequatur numquam et... <b>Xem thêm</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="post__draft tab-pane" id="post__draft" role="tabpanel" aria-labelledby="post__draft-btn">
               <div class="post__card">
                 <div class="post__first_row">
                   <div class="post__owner">
