@@ -10,6 +10,10 @@ main .content {
   padding-top: 7.2rem;
 }
 
+main.blur {
+  background-color: #f9f9f9;
+}
+
 .main__search__result strong {
   color: #279600;
 }
@@ -72,7 +76,7 @@ main .content {
 .filter__list li button[aria-selected="true"] {
   position: relative;
   color: #279600;
-  border-radius: 5px;
+  border-left: 0.2rem solid #279600;
   background-color: #27960011;
 }
 
