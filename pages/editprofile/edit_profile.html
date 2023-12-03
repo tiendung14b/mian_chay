@@ -198,7 +198,7 @@
                 <div class="phonenumber-row">
                   <span>Số diện thoại:</span>
                   <p>********98</p>
-                  <span>Thay đổi</span>
+                  <span style="cursor: pointer;" onclick="onShowChangePhone()">Thay đổi</span>
                 </div>
                 <div class="gender_row">
                   <p>Giới tính</p>
@@ -381,6 +381,23 @@
       <div class="row-submit">
         <button onclick="onBlur()">Hủy</button>
         <button onclick="onBlur()">Lưu</button>
+      </div>
+    </div>
+    <div id="change_phone">
+      <p class="popup_title">
+        Đổi số điện thoại
+      </p>
+      <div class="row">
+        <label for="">Số điện thoại mới</label>
+        <input type="text" placeholder="Nhập số điện thoại của bạn">
+      </div>
+      <div class="row">
+        <label for="">Mã xác minh</label>
+        <input type="text" placeholder="Nhập mã xác minh">
+        <p>Gửi mã xác minh</p>
+      </div>
+      <div class="row-submit">
+        <button onclick="onBlur()">Xác nhận</button>
       </div>
     </div>
   </main>
