@@ -403,6 +403,15 @@
   padding: 1rem 5rem;
 }
 
+.reset_pass p:last-of-type {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #9c9c9c;
+  margin-left: auto;
+}
+
 /* popup */
 body {
   position: relative;
