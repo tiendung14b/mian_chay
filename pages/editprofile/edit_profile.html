@@ -115,7 +115,7 @@
   </header>
   <!-- main content -->
   <main id="main">
-    <div class="blur_screen"></div>
+    <div class="blur_screen" onclick="onBlur()"></div>
     <div class="content">
       <div class="main__content">
         <div class="vertical__filter">
@@ -229,7 +229,7 @@
           <div id="address" class="address tab-pane fade show active" role="tabpanel" aria-labelledby="address-tab">
             <div class="address__tab_title">
               <p>Địa chỉ của tôi</p>
-              <button id="address__tab_title__btn">+ Thêm địa chỉ mới</button>
+              <button onclick="onShowAddAddress()" id="address__tab_title__btn">+ Thêm địa chỉ mới</button>
             </div>
             <div class="address_container">
               <div class="address__item">
@@ -281,9 +281,6 @@
                     Thiết lập mặc định
                   </button>
                 </div>
-                <div class="third_row">
-                  <p>Mặc định</p>
-                </div>
               </div>
               <hr>
               <div class="address__item">
@@ -308,9 +305,6 @@
                     Thiết lập mặc định
                   </button>
                 </div>
-                <div class="third_row">
-                  <p>Mặc định</p>
-                </div>
               </div>
               <hr>
               <div class="address__item">
@@ -334,9 +328,6 @@
                   <button>
                     Thiết lập mặc định
                   </button>
-                </div>
-                <div class="third_row">
-                  <p>Mặc định</p>
                 </div>
               </div>
             </div>
@@ -345,6 +336,47 @@
             <p>c</p>
           </div>
         </div>
+      </div>
+    </div>
+    <div id="add_address_popup">
+      <p class="popup_title">
+        Địa chỉ mới
+      </p>
+      <div class="row">
+        <input type="text" placeholder="Họ tên">
+        <input type="text" placeholder="SĐT">
+      </div>
+      <div class="row">
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Tỉnh/Thành phố">
+        </div>
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Quận/Huyện">
+        </div>
+      </div>
+      <div class="row">
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Phường/Xã">
+        </div>
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Tên đường/ Số nhà ">
+        </div>
+      </div>
+      <div class="popup__address_detail">
+        <img src="../../assets/pencil.svg" alt="">
+        <input type="text" placeholder="Địa chỉ cụ thể">
+      </div>
+      <div class="row-btn">
+        <input type="checkbox" />
+        <p>Đặt làm địa chỉ mặc định</p>
+      </div>
+      <div class="row-submit">
+        <button onclick="onBlur()">Hủy</button>
+        <button onclick="onBlur()">Lưu</button>
       </div>
     </div>
   </main>
@@ -397,7 +429,7 @@
   <div class="copy-right">
     <p class="copy-right-text">All rights reserved by © <em>Mianchay creative</em> 2023</p>
   </div>
-  <script src="./search_results_page.js"></script>
+  <script src="./edit_profile.js"></script>
   <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
   <script src="../../assets/base.js" />
 </body>

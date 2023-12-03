@@ -42,7 +42,7 @@ body {
 }
 
 main {
-  position: relative;
+  padding-bottom: 10rem;
 }
 
 main .content {
