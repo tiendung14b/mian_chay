@@ -354,6 +354,43 @@
   align-self: flex-start;
 }
 
+.reset_pass.active {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 70%;
+}
+
+.reset_pass .title {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.reset_pass input {
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+  padding: 1.5rem 2.4rem 1.6rem 2.4rem;
+  outline: none;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reset_pass button {
+  align-self: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 24px;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem 5rem;
+}
+
 /* popup */
 body {
   position: relative;
