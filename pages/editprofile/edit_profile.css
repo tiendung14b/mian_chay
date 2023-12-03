@@ -1,0 +1,231 @@
+.main__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical__filter {
+  min-width: 25%;
+  max-width: 25%;
+}
+
+.filter__title_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 0rem;
+}
+
+.filter__title_box:first-child {
+  background-color: #e8f3e5;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding-left: 1.2rem;
+  border-left: 2px solid var(--color-primary);
+}
+
+.filter__title_box:first-child .filter__title {
+  color: var(--color-primary);
+}
+
+.filter__title {
+  font-family: Sarabun;
+  font-size: var(--secondary-text-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 1.2rem;
+  transform: translateY(-0.2rem);
+}
+
+.filter__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__list li {
+  margin-right: 2.4rem;
+  transition: ease-in-out 0.15s;
+}
+
+.filter__list li button {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: var(--content-filter-item-text-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 1.5rem 0rem 1.5rem 4.4rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  text-align: left;
+}
+
+.filter__list li button:hover {
+  color: var(--color-primary);
+}
+
+.filter__list li button[aria-selected="true"] {
+  color: var(--color-primary);
+}
+
+.content__container {
+  margin-left: 4.8rem;
+  width: 100%;
+}
+
+.profile.active {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.profile__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile__header__title {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: row;
+  gap: 4.8rem;
+  width: 100%;
+}
+
+.profile__content .col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 60%;
+}
+
+.profile__content .col-1 .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  outline: none;
+  padding: 1.3rem 2.4rem 1.6rem 2.4rem;
+}
+
+.row textarea:focus,
+.row input:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.edit_profile_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.row:first-child .edit_profile_input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.edit_profile_input label {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #9c9c9c;
+  margin-left: 1rem;
+}
+
+.edit_profile_input input {
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+  padding: 1.3rem 2.4rem 1.6rem 2.4rem;
+  outline: none;
+}
+
+.edit_profile_input.right {
+  margin-left: auto;
+}
+
+.phonenumber-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.phonenumber-row span:first-child {
+  color: #9c9c9c;
+}
+
+.phonenumber-row span:last-child {
+  color: var(--color-primary);
+}
+
+.gender_row p {
+  color: #9c9c9c;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.gender_selection {
+  display: flex;
+  flex-direction: row;
+  gap: 13rem;
+  margin-left: 3rem;
+}
+
+.gender_option input[type="radio"]:checked {
+  background-color: var(--color-primary);
+}
+
+.gender_option label {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  border: 1px solid #d9d9d9;
+  padding: 4.8rem 4.8rem;
+  border-radius: 24px;
+  height: 100%;
+  margin-left: auto;
+  width: 35%;
+}
+
+.profile_btn {
+  border-radius: 16px;
+  align-self: center;
+  padding: 1rem 5rem;
+  border: 1px solid var(--color-primary);
+}
+
+.profile_btn:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}

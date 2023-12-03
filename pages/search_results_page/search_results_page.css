@@ -70,6 +70,7 @@
   color: #279600;
   border-left: 0.2rem solid #279600;
   background-color: #27960011;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .filter__list li button[aria-selected="true"] path {

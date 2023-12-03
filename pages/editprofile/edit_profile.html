@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MianChay: Kết quả tìm kiếm</title>
+  <link rel="icon" href="../../assets/logo.png">
+  <!-- icon from font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- Boostrap 5 CDN link embed -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Boostrap 5 CSS CDN embed link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- reset css -->
+  <link rel="stylesheet" href="../../assets/reset.css" !important>
+  <!-- base css -->
+  <link rel="stylesheet" href="../../assets/base.css" !important>
+  <!-- css -->
+  <link rel="stylesheet" href="./edit_profile.css" !important>
+  <link rel="stylesheet" href="../../assets/header.css" !important>
+  <link rel="stylesheet" href="../../assets/footer.css" !important>
+</head>
+
+<body>
+  <!-- nav -->
+  <header>
+    <div class="content">
+      <a href="">
+        <div class="header__intro" title="MianChay">
+          <img src="../../assets/logo.png" alt="Logo" class="header__logo">
+          <strong class="header__title">MIAN CHAY</strong>
+        </div>
+      </a>
+      <ul class="header__nav">
+        <li class="header__nav-item"><a href="#!" class="header__nav-link">Trang chủ</a></li>
+        <li class="header__nav-item">
+          <a href="#!" class="header__nav-link">Sản phẩm</a>
+          <img src="../../assets/dropdown.svg" alt="">
+        </li>
+        <li class="header__nav-item">
+          <a href="#!" class="header__nav-link">Diễn đàn</a>
+          <img src="../../assets/dropdown.svg" alt="">
+        </li>
+      </ul>
+      <div class="header__tools">
+        <div class="header_search_input btn-secondary dropdown">
+          <div data-bs-toggle="dropdown" aria-expanded="false" id="header__search" aria-selected="false">
+            <input id="header__input" type="text" placeholder="Tìm kiếm" onfocus="on_focus()" onblur="on_blur()" />
+            <img src="../../assets/search.svg" alt="" class="">
+          </div>
+          <ul id="header__dropdown-menu" class="dropdown-menu" aria-labelledby="header__search">
+            <li class="dropdown-item">
+              <p class="dropdown-item__title">Tìm kiếm gần đây</p>
+              <span class="right">Xóa</span>
+            </li>
+            <li class="dropdown-item">
+              <div class="dropdown-item__box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4425 16.5L11.25 12.3075V5.25H12.75V11.685L16.5 15.4425L15.4425 16.5Z" fill="#9C9C9C" />
+                  <path
+                    d="M12 1.5C10.6012 1.5002 9.21669 1.78108 7.92842 2.32602C6.64015 2.87096 5.47433 3.66887 4.5 4.6725V1.5H3V7.5H9V6H5.31C6.71702 4.43647 8.62724 3.41515 10.7089 3.1134C12.7905 2.81166 14.9121 3.24856 16.7052 4.34823C18.4983 5.4479 19.8495 7.14086 20.5243 9.1331C21.1991 11.1253 21.1547 13.291 20.399 15.2539C19.6433 17.2169 18.2239 18.8531 16.3873 19.8785C14.5507 20.9039 12.4131 21.2536 10.3455 20.8669C8.27793 20.4803 6.41111 19.3816 5.06925 17.7618C3.72739 16.142 2.99525 14.1034 3 12H1.5C1.5 14.0767 2.11581 16.1068 3.26957 17.8335C4.42332 19.5602 6.0632 20.906 7.98182 21.7007C9.90045 22.4955 12.0116 22.7034 14.0484 22.2982C16.0852 21.8931 17.9562 20.8931 19.4246 19.4246C20.8931 17.9562 21.8931 16.0852 22.2982 14.0484C22.7034 12.0116 22.4955 9.90045 21.7007 7.98182C20.906 6.0632 19.5602 4.42332 17.8335 3.26957C16.1068 2.11581 14.0767 1.5 12 1.5Z"
+                    fill="#9C9C9C" />
+                </svg>
+              </div>
+              <p class="dropdown-item__text">Sức khỏe</p>
+              <div class="dropdown-item__box right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M2.40039 13.6004L13.6004 2.40039M13.6004 13.6004L2.40039 2.40039" stroke="#9C9C9C"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </li>
+            <li class="dropdown-item">
+              <div class="dropdown-item__box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4425 16.5L11.25 12.3075V5.25H12.75V11.685L16.5 15.4425L15.4425 16.5Z" fill="#9C9C9C" />
+                  <path
+                    d="M12 1.5C10.6012 1.5002 9.21669 1.78108 7.92842 2.32602C6.64015 2.87096 5.47433 3.66887 4.5 4.6725V1.5H3V7.5H9V6H5.31C6.71702 4.43647 8.62724 3.41515 10.7089 3.1134C12.7905 2.81166 14.9121 3.24856 16.7052 4.34823C18.4983 5.4479 19.8495 7.14086 20.5243 9.1331C21.1991 11.1253 21.1547 13.291 20.399 15.2539C19.6433 17.2169 18.2239 18.8531 16.3873 19.8785C14.5507 20.9039 12.4131 21.2536 10.3455 20.8669C8.27793 20.4803 6.41111 19.3816 5.06925 17.7618C3.72739 16.142 2.99525 14.1034 3 12H1.5C1.5 14.0767 2.11581 16.1068 3.26957 17.8335C4.42332 19.5602 6.0632 20.906 7.98182 21.7007C9.90045 22.4955 12.0116 22.7034 14.0484 22.2982C16.0852 21.8931 17.9562 20.8931 19.4246 19.4246C20.8931 17.9562 21.8931 16.0852 22.2982 14.0484C22.7034 12.0116 22.4955 9.90045 21.7007 7.98182C20.906 6.0632 19.5602 4.42332 17.8335 3.26957C16.1068 2.11581 14.0767 1.5 12 1.5Z"
+                    fill="#9C9C9C" />
+                </svg>
+              </div>
+              <p class="dropdown-item__text">Sức khỏe</p>
+              <div class="dropdown-item__box right">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.40039 13.6004L13.6004 2.40039M13.6004 13.6004L2.40039 2.40039" stroke="#9C9C9C"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="fill: #279600;" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <img src="../../assets/cart1.svg" alt="">
+        </picture>
+        <picture>
+          <img src="../../assets/notify1.svg" class="header__tools__item" alt=""></i>
+        </picture>
+        <picture>
+          <a href="../profile/profile.html"><img src="../../assets/user_avatar.png" alt="" class="header__user_avt"></a>
+        </picture>
+      </div>
+    </div>
+  </header>
+  <!-- main content -->
+  <main id="main">
+    <div class="blur_screen"></div>
+    <div class="content">
+      <div class="main__content">
+        <div class="vertical__filter">
+          <div class="filter__title_box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2213_4058)">
+                <path
+                  d="M24 11.988C24 5.37 18.624 0 12 0C5.376 0 0 5.37 0 11.988C0 15.633 1.656 18.918 4.248 21.123C4.272 21.147 4.296 21.147 4.296 21.171C4.512 21.339 4.728 21.507 4.968 21.675C5.088 21.747 5.184 21.8415 5.304 21.9375C7.2871 23.282 9.62806 24.0005 12.024 24C14.4199 24.0005 16.7609 23.282 18.744 21.9375C18.864 21.8655 18.96 21.771 19.08 21.6975C19.296 21.531 19.536 21.363 19.752 21.195C19.776 21.171 19.8 21.171 19.8 21.147C22.344 18.9165 24 15.633 24 11.988ZM12 22.4895C9.744 22.4895 7.68 21.7695 5.976 20.571C6 20.379 6.048 20.1885 6.096 19.9965C6.23901 19.4762 6.44875 18.9765 6.72 18.51C6.984 18.054 7.296 17.646 7.68 17.286C8.04 16.926 8.472 16.5915 8.904 16.3275C9.36 16.0635 9.84 15.8715 10.368 15.7275C10.9001 15.5841 11.4489 15.5119 12 15.513C13.636 15.5014 15.2118 16.129 16.392 17.262C16.944 17.814 17.376 18.462 17.688 19.2045C17.856 19.6365 17.976 20.0925 18.048 20.571C16.2768 21.8162 14.1652 22.4861 12 22.4895ZM8.328 11.3895C8.11653 10.9053 8.01019 10.3818 8.016 9.8535C8.016 9.327 8.112 8.799 8.328 8.319C8.544 7.839 8.832 7.4085 9.192 7.0485C9.552 6.6885 9.984 6.402 10.464 6.186C10.944 5.97 11.472 5.874 12 5.874C12.552 5.874 13.056 5.97 13.536 6.186C14.016 6.402 14.448 6.69 14.808 7.0485C15.168 7.4085 15.456 7.8405 15.672 8.319C15.888 8.799 15.984 9.327 15.984 9.8535C15.984 10.4055 15.888 10.9095 15.672 11.388C15.4635 11.8609 15.1708 12.2919 14.808 12.66C14.4398 13.0222 14.0088 13.3145 13.536 13.5225C12.5442 13.9301 11.4318 13.9301 10.44 13.5225C9.96722 13.3145 9.53621 13.0222 9.168 12.66C8.80472 12.2973 8.51894 11.866 8.328 11.3895ZM19.464 19.3485C19.464 19.3005 19.44 19.2765 19.44 19.2285C19.204 18.4776 18.856 17.7666 18.408 17.1195C17.9595 16.4676 17.4084 15.8926 16.776 15.417C16.293 15.0537 15.7695 14.7476 15.216 14.505C15.4678 14.3389 15.7011 14.1463 15.912 13.9305C16.2698 13.5773 16.584 13.1824 16.848 12.7545C17.3795 11.8812 17.654 10.8757 17.64 9.8535C17.6474 9.09677 17.5004 8.34648 17.208 7.6485C16.9193 6.97596 16.5037 6.36533 15.984 5.85C15.4651 5.34005 14.8543 4.93289 14.184 4.65C13.4849 4.35809 12.7336 4.21161 11.976 4.2195C11.2183 4.21209 10.467 4.35908 9.768 4.6515C9.09188 4.93378 8.47966 5.34958 7.968 5.874C7.45806 6.39238 7.05089 7.00263 6.768 7.6725C6.47557 8.37048 6.32858 9.12077 6.336 9.8775C6.336 10.4055 6.408 10.9095 6.552 11.388C6.696 11.892 6.888 12.348 7.152 12.7785C7.392 13.2105 7.728 13.5945 8.088 13.9545C8.304 14.1705 8.544 14.361 8.808 14.529C8.25275 14.7781 7.72908 15.0923 7.248 15.465C6.624 15.945 6.072 16.5195 5.616 17.1435C5.16339 17.7879 4.81512 18.4997 4.584 19.2525C4.56 19.3005 4.56 19.3485 4.56 19.3725C2.664 17.454 1.488 14.865 1.488 11.988C1.488 6.21 6.216 1.4865 12 1.4865C17.784 1.4865 22.512 6.21 22.512 11.988C22.5089 14.7479 21.413 17.3943 19.464 19.3485Z"
+                  fill="#279600" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2213_4058">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="filter__title">Tài khoản</p>
+          </div>
+          <ul class="filter__list nav nav-pills mb-3" id="mytab" role="tablist">
+            <li role="presentation">
+              <button id="profile-tab" data-bs-toggle="pill" data-bs-target="#profile" type="button" role="tab"
+                aria-controls="profile-tab" aria-selected="true">
+                Hồ sơ
+              </button>
+            </li>
+            <li role="presentation">
+              <button id="address-tab" data-bs-toggle="pill" data-bs-target="#address" type="button" role="tab"
+                aria-controls="address-tab" aria-selected="false">
+                Bài viết
+              </button>
+            </li>
+            <li role="presentation">
+              <button id="reset_pass-tab" data-bs-toggle="pill" data-bs-target="#reset_pass" type="button" role="tab"
+                aria-controls="reset_pass-tab" aria-selected="false">
+                Người dùng
+              </button>
+            </li>
+          </ul>
+          <div class="filter__title_box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 3C10.22 3 8.47991 3.52784 6.99987 4.51677C5.51983 5.50571 4.36628 6.91131 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.387 3 12 3ZM4.5 12C4.49849 10.2704 5.09961 8.59437 6.2 7.26L16.74 17.8C15.6426 18.7001 14.3119 19.2699 12.9031 19.443C11.4943 19.616 10.0654 19.3852 8.78268 18.7774C7.50001 18.1696 6.41645 17.2098 5.65823 16.0099C4.9 14.81 4.49833 13.4194 4.5 12ZM17.8 16.74L7.26 6.2C8.69757 5.02356 10.521 4.42329 12.3763 4.51573C14.2315 4.60817 15.9863 5.38672 17.2998 6.70022C18.6133 8.01372 19.3918 9.76846 19.4843 11.6237C19.5767 13.479 18.9764 15.3024 17.8 16.74Z"
+                fill="#1A1C1A" />
+            </svg>
+            <p class="filter__title">Danh sách đã chặn</p>
+          </div>
+        </div>
+        <div class="content__container tab-content">
+          <div id="profile" class="profile tab-pane fade show active" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="profile__header">
+              <div class="profile__header__title">
+                Địa chỉ của tôi
+              </div>
+            </div>
+            <div class="profile__content">
+              <div class="col-1">
+                <div class="row">
+                  <div class="edit_profile_input">
+                    <label for="">Tên hiển thị</label>
+                    <input type="text" placeholder="Nhập tên hiển thị" value="Đoàn Văn An">
+                  </div>
+                  <div class="edit_profile_input right">
+                    <label for="">Tên đề cập</label>
+                    <input type="text" placeholder="Nhập tên hiển thị" value="@dva123">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="edit_profile_input">
+                    <label for="">Tiểu sử</label>
+                    <textarea name="" id="" rows="6">
+                    </textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="edit_profile_input">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Email" value="tramyy82taetaetae@gmail.com" />
+                  </div>
+                </div>
+                <div class="phonenumber-row">
+                  <span>Số diện thoại:</span>
+                  <p>********98</p>
+                  <span>Thay đổi</span>
+                </div>
+                <div class="gender_row">
+                  <p>Giới tính</p>
+                  <div class="gender_selection">
+                    <div class="gender_option">
+                      <input type="radio" id="contactChoice1" name="gender" />
+                      <label for="contactChoice1">Nam</label>
+                    </div>
+                    <div class="gender_option">
+                      <input type="radio" id="contactChoice2" name="gender" />
+                      <label for="contactChoice1">Nữ</label>
+                    </div>
+                    <div class="gender_option">
+                      <input type="radio" id="contactChoice3" name="gender" />
+                      <label for="contactChoice1">Khác</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <img src="../../assets/camera.svg" alt="">
+                <p>Dung lượng file tối đa 1 MB</p>
+                <p>Định dạng: .jpg, .png</p>
+              </div>
+            </div>
+            <button class="profile_btn">Lưu</button>
+          </div>
+          <div id="address" class="address tab-pane fade" role="tabpanel" aria-labelledby="address-tab">
+            <p>b</p>
+          </div>
+          <div id="reset_pass" class="reset_pass tab-pane fade" role="tabpanel" aria-labelledby="reset_pass-tab">
+            <p>c</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="mianchay">
+    <div class="mianchay__intro">
+      <div class="mianchay__logo">
+        <img src="../../assets/logo.png" alt="Logo" class="header__logo">
+        <strong class="mianchay__title">MIAN CHAY</strong>
+      </div>
+      <p class="mianchay__desc">Chúng tôi hi vọng tất cả người tiêu dùng Việt nam sẽ được sử dụng những sản phẩm chay
+        chất lượng, an toàn nhất tại cửa
+        hàng mian chay.</p>
+      <div class="mianchay__email_input">
+        <input type="email" placeholder="Email">
+        <button class="mianchay__email_subimt_button">Đăng ký</button>
+      </div>
+    </div>
+    <div class="mianchay__about">
+      <p class="about__first_row">Về chúng tôi</p>
+      <div class="about__second_row">
+        <ul class="about__col">
+          <li>Trang chủ</li>
+          <li>Diễn đàn</li>
+          <li>Cửa hàng</li>
+        </ul>
+        <ul class="about__col">
+          <li>Trang chủ</li>
+          <li>Diễn đàn</li>
+          <li>Cửa hàng</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mianchay__contact">
+      <p class="contact__first_row">Liên hệ</p>
+      <div class="contact__row">
+        <img src="../../assets/phone.svg" alt="">
+        <p>033 569 9699</p>
+      </div>
+      <div class="contact__row">
+        <img src="../../assets/fb.svg" alt="">
+        <p>Mian Chay</p>
+      </div>
+      <div class="contact__row">
+        <img src="../../assets/location.svg" alt="">
+        <p>Trần Phú, Hà Nội</p>
+      </div>
+    </div>
+  </footer>
+  <div class="copy-right">
+    <p class="copy-right-text">All rights reserved by © <em>Mianchay creative</em> 2023</p>
+  </div>
+  <script src="./search_results_page.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+  <script src="../../assets/base.js" />
+</body>
+
+</html>
