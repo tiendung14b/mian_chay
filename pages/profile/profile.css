@@ -294,7 +294,7 @@
 }
 
 .post__content_desc {
-  width: 627px;
+  width: 95%;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -306,7 +306,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0 1.6rem;
-  width: 627px;
+  width: 95%;
 }
 
 .post__interact__left {
