@@ -313,6 +313,7 @@
   font-weight: 400;
   line-height: normal;
   color: var(--color-primary);
+  cursor: pointer;
 }
 
 .address__item .second_row {
@@ -417,19 +418,19 @@ body {
   position: relative;
 }
 
-#add_address_popup {
+.popup {
   display: none;
   z-index: 999;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -90%);
+  left: 50vh;
+  top: 50vh;
+  transform: translate(0%, -50%);
   width: 75vh;
   border-radius: 24px;
   background-color: #fff;
   position: absolute;
 }
 
-#add_address_popup.show {
+.popup.show {
   display: flex;
   flex-direction: column;
   gap: 4.4rem;
@@ -444,13 +445,13 @@ body {
   line-height: normal;
 }
 
-#add_address_popup .row {
+.popup .row {
   display: flex;
   flex-direction: row;
   gap: 2.4rem;
 }
 
-#add_address_popup .row:first-of-type input {
+.popup .row:first-of-type input {
   width: 47%;
   border: none;
   border-bottom: 1px solid #d9d9d9;
@@ -460,6 +461,8 @@ body {
   line-height: normal;
   outline: none;
   padding-bottom: 0.8rem;
+
+  color: #9c9c9c;
 }
 
 .popup__input_box {
@@ -470,11 +473,13 @@ body {
   gap: 0.8rem;
   padding-bottom: 0.8rem;
   border-bottom: 1px solid #d9d9d9;
+  font-size: 1.8rem;
 }
 
 .popup__input_box input {
   border: none;
   outline: none;
+  color: #9c9c9c;
 }
 
 .popup__input_box input:focus {
@@ -499,6 +504,8 @@ body {
   font-weight: 400;
   line-height: normal;
   outline: none;
+
+  color: #9c9c9c;
 }
 
 .popup__address_detail input:focus {
@@ -554,9 +561,9 @@ body {
 #change_phone {
   display: none;
   z-index: 999;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -100%);
+  left: 50vh;
+  top: 50vh;
+  transform: translate(0%, -50%);
   width: 75vh;
   border-radius: 24px;
   background-color: #fff;
@@ -616,4 +623,48 @@ body {
   font-weight: 400;
   line-height: normal;
   margin-left: auto;
+}
+
+/* === delete confirm popup */
+.delete_address_popup {
+  display: none;
+  z-index: 999;
+  left: 50vh;
+  top: 50vh;
+  transform: translate(0%, -50%);
+  width: 75vh;
+  border-radius: 24px;
+  background-color: #fff;
+  position: absolute;
+  padding: 2.8rem 6.2rem;
+}
+
+.delete_address_popup.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+  position: absolute;
+}
+
+.delete_address_popup .row-submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-left: 0 !important;
+}
+
+.delete_address_popup .row-submit button:first-child {
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  color: #9c9c9c;
+}
+
+.delete_address_popup .row-submit button:last-child {
+  background-color: var(--color-primary);
+  border: none;
+  color: #fff;
 }

@@ -242,7 +242,7 @@
                     033 569 9699
                   </div>
                   <div class="address__update">
-                    <p>Cập nhật</p>
+                    <p onclick="onShowUpdateAddress()">Cập nhật</p>
                   </div>
                 </div>
                 <div class="second_row">
@@ -269,8 +269,8 @@
                     033 569 9699
                   </div>
                   <div class="address__update">
-                    <p>Cập nhật</p>
-                    <p>Xóa</p>
+                    <p onclick="onShowUpdateAddress()">Cập nhật</p>
+                    <p onclick="onConfirmDeleteAddress()">Xóa</p>
                   </div>
                 </div>
                 <div class="second_row">
@@ -294,8 +294,8 @@
                     033 569 9699
                   </div>
                   <div class="address__update">
-                    <p>Cập nhật</p>
-                    <p>Xóa</p>
+                    <p onclick="onShowUpdateAddress()">Cập nhật</p>
+                    <p onclick="onConfirmDeleteAddress()">Xóa</p>
                   </div>
                 </div>
                 <div class="second_row">
@@ -319,8 +319,8 @@
                     033 569 9699
                   </div>
                   <div class="address__update">
-                    <p>Cập nhật</p>
-                    <p>Xóa</p>
+                    <p onclick="onShowUpdateAddress()">Cập nhật</p>
+                    <p onclick="onConfirmDeleteAddress()">Xóa</p>
                   </div>
                 </div>
                 <div class="second_row">
@@ -346,7 +346,7 @@
         </div>
       </div>
     </div>
-    <div id="add_address_popup">
+    <div id="add_address_popup" class="popup">
       <p class="popup_title">
         Địa chỉ mới
       </p>
@@ -402,6 +402,56 @@
       </div>
       <div class="row-submit">
         <button onclick="onBlur()">Xác nhận</button>
+      </div>
+    </div>
+    <div id="update_address_popup" class="popup">
+      <p class="popup_title">
+        Cập nhật địa chỉ
+      </p>
+      <div class="row">
+        <input type="text" placeholder="Họ tên" value="Nguyên Văn A">
+        <input type="text" placeholder="SĐT" value="0123456789">
+      </div>
+      <div class="row">
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Tỉnh/Thành phố" value="Hà Nội">
+        </div>
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Quận/Huyện" value="Hà Đông">
+        </div>
+      </div>
+      <div class="row">
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Phường/Xã" value="Hà Trì">
+        </div>
+        <div class="popup__input_box">
+          <img src="../../assets/location1.svg" alt="">
+          <input type="text" placeholder="Tên đường/ Số nhà" value="Hà Cầu">
+        </div>
+      </div>
+      <div class="popup__address_detail">
+        <img src="../../assets/pencil.svg" alt="">
+        <input type="text" placeholder="Địa chỉ cụ thể" value="Ivy Morning">
+      </div>
+      <div class="row-btn">
+        <input type="checkbox" />
+        <p>Đặt làm địa chỉ mặc định</p>
+      </div>
+      <div class="row-submit">
+        <button onclick="onBlur()">Hủy</button>
+        <button onclick="onBlur()">Lưu</button>
+      </div>
+    </div>
+    <div id="delete_address_popup" class="delete_address_popup">
+      <p class="popup_content">
+        Bạn có chắc chắn muốn xóa địa chỉ này?
+      </p>
+      <div class="row-submit">
+        <button onclick="onBlur()">Hủy</button>
+        <button onclick="onBlur()">Xóa</button>
       </div>
     </div>
   </main>
