@@ -422,9 +422,9 @@ body {
 .popup {
   display: none;
   z-index: 999;
-  left: 50vh;
-  top: 50vh;
-  transform: translate(20%, -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -90%);
   width: 75vh;
   border-radius: 24px;
   background-color: #fff;
@@ -562,9 +562,9 @@ body {
 #change_phone {
   display: none;
   z-index: 999;
-  left: 50vh;
-  top: 50vh;
-  transform: translate(20%, -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -90%);
   width: 75vh;
   border-radius: 24px;
   background-color: #fff;
@@ -630,9 +630,9 @@ body {
 .delete_address_popup {
   display: none;
   z-index: 999;
-  left: 50vh;
-  top: 50vh;
-  transform: translate(20%, -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -250%);
   width: 75vh;
   border-radius: 24px;
   background-color: #fff;
