@@ -43,6 +43,7 @@ body {
 
 main {
   padding-bottom: 10rem;
+  position: relative;
 }
 
 main .content {
@@ -51,6 +52,10 @@ main .content {
 
 main.blur .blur_screen {
   display: block;
+}
+
+main.total_blur {
+  position: unset;
 }
 
 .critz_text {
