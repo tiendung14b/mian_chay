@@ -559,7 +559,7 @@ body {
 }
 
 /* reset pass popup */
-#change_phone {
+.popup2 {
   display: none;
   z-index: 999;
   left: 50%;
@@ -572,33 +572,33 @@ body {
   padding: 4.8rem;
 }
 
-#change_phone.show {
+.popup2.show {
   display: flex;
   flex-direction: column;
   gap: 2.8rem;
   position: absolute;
 }
 
-#change_phone .title {
+.popup2 .title {
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-#change_phone .row {
+.popup2 .row {
   display: flex;
   flex-direction: row;
   gap: 2.4rem;
 }
 
-#change_phone .row {
+.popup2 .row {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
-#change_phone .row label {
+.popup2 .row label {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -606,7 +606,7 @@ body {
   color: #9c9c9c;
 }
 
-#change_phone .row input {
+.popup2 .row input {
   border-radius: 20px;
   border: 1px solid #d9d9d9;
   padding: 1.3rem 2.4rem 1.6rem 2.4rem;
@@ -617,13 +617,29 @@ body {
   line-height: normal;
 }
 
-#change_phone .row p {
+.popup2 .row p {
   color: var(--color-primary);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-left: auto;
+  text-align: right;
+}
+
+.popup2__row-submit {
+  align-self: center;
+}
+
+.popup2__row-submit button {
+  padding: 1rem 5rem;
+  border-radius: 20px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* === delete confirm popup */

@@ -340,7 +340,7 @@
             <input type="text" placeholder="Mật khẩu cũ">
             <input type="text" placeholder="Mật khẩu mới">
             <input type="text" placeholder="Nhập lại mật khẩu mới">
-            <p>Quên mật khẩu?</p>
+            <p onclick="onShowResetPassword()" style="cursor: pointer;">Quên mật khẩu?</p>
             <button>Xác nhận</button>
           </div>
         </div>
@@ -387,7 +387,7 @@
         <button onclick="onBlur()">Lưu</button>
       </div>
     </div>
-    <div id="change_phone">
+    <div id="change_phone" class="popup2">
       <p class="popup_title">
         Đổi số điện thoại
       </p>
@@ -400,7 +400,7 @@
         <input type="text" placeholder="Nhập mã xác minh">
         <p>Gửi mã xác minh</p>
       </div>
-      <div class="row-submit">
+      <div class="popup2__row-submit">
         <button onclick="onBlur()">Xác nhận</button>
       </div>
     </div>
@@ -452,6 +452,17 @@
       <div class="row-submit">
         <button onclick="onBlur()">Hủy</button>
         <button onclick="onBlur()">Xóa</button>
+      </div>
+    </div>
+    <div id="reset_pass_popup" class="popup2">
+      <div class="row">
+        <input type="text" placeholder="Mật khẩu mới">
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Nhập lại mật khẩu mới">
+      </div>
+      <div class="popup2__row-submit">
+        <button onclick="onBlur()">Xác nhận</button>
       </div>
     </div>
   </main>
